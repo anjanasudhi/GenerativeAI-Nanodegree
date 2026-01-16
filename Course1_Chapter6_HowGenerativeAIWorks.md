@@ -6,6 +6,9 @@ DiffusionFlow (blog) Diffusion Meets Flow Matching: Two Sides of the Same Coin(o
 Clemson / PyTorch LLM tutorial — Small Language Models: an introduction to autoregressive (causal) modeling(opens in a new tab) Practical notes on autoregressive (causal) language modeling used by decoder-only LLMs (predict next token conditioned on previous tokens).
 
 
+6.4 Training GenAI MOdels
+
+
 Training a generative AI model, like a text-based Transformer, begins with a process called pre-training. This stage uses a vast and diverse dataset containing content like books, articles, encyclopedias (e.g., Wikipedia), online forums, and code repositories from sources like GitHub.
 
 The core task during pre-training is next-token prediction. The model is given a snippet of text and must guess the next word. For example, given the phrase "To be or not to...", the model should predict "be". If the model's prediction is correct, its internal parameters (weights) are adjusted to reinforce that choice. If it's incorrect, the weights are adjusted to discourage that choice in the future. This initial step gives the model a foundational understanding of language.
