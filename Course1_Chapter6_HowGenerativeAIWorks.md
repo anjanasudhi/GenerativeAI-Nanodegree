@@ -36,6 +36,17 @@ System 2 thinking is slow, deliberate, and analytical. This mirrors an advanced 
 System 1 thinking is rapid, intuitive, and automatic, while System 2 thinking is slow, deliberate, and analytical.
 System 1 versus System 2 Thinking
 
+
+6.5 Training GenAI Models: Apply and Explore
+
+Hugging Face Blog - Illustrating Reinforcement Learning from Human Feedback (RLHF)(opens in a new tab) A practical overview of RLHF describing reward modeling, human preference data, and how RL is used to align LLM outputs with human judgments.
+arXiv — Chain-of-Thought Prompting Elicits Reasoning in Large Language Models(opens in a new tab) The original paper showing how providing intermediate reasoning steps (chain-of-thought) in prompts substantially improves complex reasoning performance in large models.
+Hugging Face LLM Course — Supervised Fine-Tuning (SFT)(opens in a new tab) A hands-on tutorial-style chapter explaining SFT: preparing labeled data, training steps, and best practices for adapting pretrained LLMs to task-specific behavior.
+fs.blog — Daniel Kahneman Explains The Machinery of Thought (System 1 & System 2)(opens in a new tab) A readable essay that summarizes Kahneman’s System 1 (fast/intuitive) vs System 2 (slow/deliberative) framework and its implications for decision-making.
 Advances in reinforcement fine-tuning have significantly improved this "System 2" capability, enabling even smaller models to reason about complex topics more effectively than some larger models.
 
 A multi-stage training process—combining broad pre-training with specialized supervised and reinforcement fine-tuning—is what allows generative models to move beyond simple pattern matching to complex reasoning.
+
+
+
+
