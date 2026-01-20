@@ -122,3 +122,10 @@ Resources
 3Blue1Brown - What is backpropagation really doing?(opens in a new tab) Intuitive visual explanation of backpropagation showing how the chain rule computes gradients that let neural nets learn.
 scikit-learn — train_test_split (documentation)(opens in a new tab) Official reference for splitting datasets into train/test (and validation via repeated splitting), with parameters and examples.
 Deep Learning (Goodfellow et al.) — Optimization(opens in a new tab) Authoritative chapter on optimization in neural networks, including discussion of local vs. global minima and practical optimization algorithms
+
+
+Key Takeaways
+Neural networks are built from fundamental components, starting with the single-neuron perceptron and scaling up to the more complex multi-layer perceptron (MLP).
+Networks learn by adjusting their internal parameters (weights and biases) to minimize errors.
+Gradient descent is the core optimization algorithm used to find the optimal parameters that reduce the network's loss or error.
+Backpropagation is the crucial process that efficiently calculates the gradients of the loss function, enabling the network to update its weights during training.
