@@ -117,3 +117,8 @@ After training, the final step is to test the model's performance. This must be 
 
 Neural networks learn by using backpropagation to efficiently perform gradient descent, iteratively adjusting weights to minimize a loss function based on a labeled dataset.
 
+
+Resources
+3Blue1Brown - What is backpropagation really doing?(opens in a new tab) Intuitive visual explanation of backpropagation showing how the chain rule computes gradients that let neural nets learn.
+scikit-learn — train_test_split (documentation)(opens in a new tab) Official reference for splitting datasets into train/test (and validation via repeated splitting), with parameters and examples.
+Deep Learning (Goodfellow et al.) — Optimization(opens in a new tab) Authoritative chapter on optimization in neural networks, including discussion of local vs. global minima and practical optimization algorithms
