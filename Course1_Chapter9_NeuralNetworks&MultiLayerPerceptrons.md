@@ -96,3 +96,24 @@ Wikipedia - Multilayer perceptron(opens in a new tab) Overview of MLP architectu
 CS229 (Stanford) - Supervised Learning notes (Perceptron & gradient methods)(opens in a new tab) Rigorous lecture notes including perceptron learning, linear separability, and gradient-based optimization.
 
 
+9.5 Training Neural Networks
+
+To train a neural network, the first requirement is a labeled dataset. This is a collection of input data where each piece of data is meticulously paired with its correct, corresponding output. This association allows a model to learn patterns and make predictions. For example, in a model designed to differentiate between images of cats and dogs, each image (the input) in the dataset must be labeled as either "cat" or "dog" (the output). A robust dataset can contain thousands or even millions of these input-output pairs.
+
+
+For language models like Transformers, this concept is adapted. The input dataset consists of the beginnings of text passages, and the output is the next word. For the phrase "To be or not to be," the dataset would contain multiple pairs: the input "To be or..." would be paired with the output "not," the input "To be or not..." would be paired with "to," and so on.
+
+Once we have a dataset, the goal is to adjust the model's internal parameters so it can reliably produce the correct outputs. We achieve this by defining a loss function, which is a function that penalizes the model for wrong answers. The training process then becomes a search for the set of parameters that minimizes the value of this loss function.
+
+This minimization process is accomplished using an algorithm called gradient descent. We can visualize this as a landscape of mountains and valleys, where the landscape represents all possible parameter settings for the model, and the elevation represents the loss value. A newly initialized, untrained model will have a high loss, placing it at the top of a mountain. Gradient descent works by finding the direction of the steepest slope and taking a step "downhill" to a point of lower loss.
+
+In practice, we adjust the model's weights in discrete steps. The size of each step is determined by a parameter called the learning rate. Choosing the right learning rate is critical. If it's too large, the model might "overshoot" the bottom of the valley and fail to find the minimum. If it's too small, the training process will be very slow. The algorithm iteratively refines the parameters to minimize the loss, leading to an optimized model.
+
+To find the direction of steepest descent for all the weights in the model, we use an algorithm called backpropagation. This is an efficient method for implementing gradient descent in neural networks. The process begins with a forward pass, where an input travels through the network layers to produce an output. This output is compared to the expected result to calculate an error value.
+
+The core of backpropagation is distributing this error backward through the network. The error is propagated to each neuron, attributing a portion of "blame" for the total error. For each weight, a gradient is computed, which indicates how a small change in that weight would affect the overall error. The weights are then updated using these gradients and the learning rate.
+
+After training, the final step is to test the model's performance. This must be done on a separate test dataset (also called a hold-out dataset) that the model has not seen during training. This step is crucial for evaluating how well the model generalizes to new, unseen data, which indicates its likely performance in a real-world application.
+
+Neural networks learn by using backpropagation to efficiently perform gradient descent, iteratively adjusting weights to minimize a loss function based on a labeled dataset.
+
